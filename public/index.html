@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetalCraft</title> <!-- Fixed typo in title -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+        }
+
+        .nav-wrapper {
+            height: 79px;
+            width: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            background-color: #2561ec;
+        }
+
+        .logo-container {
+            display:flex;
+            width: 250px;
+            height: 70px;
+            transform: ease 4s;
+            justify-content: center;
+            align-items: center;
+            color:white;
+        }
+        .menu-container {
+            width: 600px;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .menu-item {
+            border-radius: 0%;
+            height: 70px;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            font-size: large;
+            font-style: normal;
+            text-decoration: none;
+            color: white;
+            transition: ease all .4s;
+        }
+        .menu-item a{
+            text-decoration: none;
+            color: white;  
+        }
+        .menu-item:hover{
+            margin-top:10px;
+            height: 50px;
+            width: 100px;
+            line-height: 70px;
+            background-color:black;
+            z-index: 1;
+            border-radius: 0% 40% 0% 40%;
+        }
+
+        .active-menu{
+            margin-top:10px;
+            height: 50px;
+            width: 100px;
+            line-height: 70px;
+            background-color:black;
+            z-index: 1;
+            border-radius: 0% 40% 0% 40%;
+        }
+       .main-container{
+        background-image: url('./img/bg.jpg');
+        height: 90vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+
+       .m-card{
+        height:  50vh;
+        width:    40vw;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 6px -4px;
+        border-radius: 10px;
+        background-color: #2561ec55;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <div class="logo-container">
+                    <div class="menu-item">
+                  <p>
+                    Aj Styles
+                  </p>
+                </div>
+                </div>
+                <div class="menu-container">
+                    <div class="menu-item active-menu">
+                        <a href="/home" title="Homepage">Home</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="/about" title="Aboutpage">About</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="/Blog" title="Blogpage">Blog</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="/connect" title="ConnectPage">Connect</a>
+                    </div>
+                    <span>
+                        
+                    </span>
+                </div>
+                <div class="3rd-container">
+                  
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+       <div class="main-container">
+        <div class="m-card">
+            <p>lorem ipsum dolor sit amet, consectetur adip</p>
+        </div>
+       </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
